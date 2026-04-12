@@ -29,6 +29,9 @@ local function checkForUpdates()
 end
 
 
+checkForUpdates()
+
+
 
 RegisterNetEvent('rbl:setBrakeLights', function(netId, state)
   local vehicle = NetworkGetEntityFromNetworkId(netId)
@@ -52,7 +55,4 @@ RegisterNetEvent('rbl:setParked', function(netId, state)
   Entity(vehicle).state.rbl_parked = state == true
 end)
 
-AddEventHandler('onResourceStart', function(resourceName)
-  if resourceName ~= GetCurrentResourceName() then return end
-  checkForUpdates()
-end)
+

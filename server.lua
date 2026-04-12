@@ -1,4 +1,4 @@
-local currentVersion = '1.0.0'
+local currentVersion = 'v1.0.0'
 
 local function fetchLatestVersion(callback)
     PerformHttpRequest('https://api.github.com/repos/RealisticScripts/rs-brake-lights/releases/latest', function(statusCode, response)

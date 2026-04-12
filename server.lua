@@ -28,7 +28,7 @@ local function checkForUpdates()
     end)
 end
 
-checkForUpdates()
+
 
 RegisterNetEvent('rbl:setBrakeLights', function(netId, state)
   local vehicle = NetworkGetEntityFromNetworkId(netId)

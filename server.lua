@@ -51,6 +51,10 @@ CreateThread(function()
     checkForUpdates()
 end)
 
+local function debugLog(message)
+  if not Config.debug then return end
+  print(('[RBL][SERVER] %s'):format(message))
+end
 
 
 RegisterNetEvent('rbl:setBrakeLights', function(netId, state)

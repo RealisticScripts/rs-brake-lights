@@ -53,4 +53,4 @@ rs-brake-lights/
 
 ## License
 
-Released under the MIT License. See `LICENSE` for full text.
+MIT License © 2026 Realistic Scripts
